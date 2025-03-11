@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="shortcut icon" href="./assets/books.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo"><a href="#" class="logo">Book Store</a></div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#product">Producto</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="nav__search" id="nav-search">
+        <input type="text" placeholder="Busqueda" /><span
+          ><i class="ri-search-2-line"></i
+        ></span>
+      </div>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__img">
+        <img src="assets/header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Encontraras los mejores libros</h1>
+          <p>
+            ¡Obtén un 5% de descuento en cada compra de más de 2 libros que
+            realices!
+          </p>
+        </div>
+      </div>
+    </header>
+    <section class="section__container deals__container">
+      <div class="deals__card">
+        <h2 class="section__header">¡Grandes ofertas te esperan!</h2>
+        <p>Compra en línea para ventas minoristas directas al consumidor</p>
+      </div>
+      <div class="deals__card">
+        <span><i class="ri-cash-line"></i></span>
+        <h4>Ahorra dinero</h4>
+        <p>Descubre precios imbatibles y ahorra en libros de alta calidad.</p>
+      </div>
+      <div class="deals__card">
+        <span><i class="ri-calendar-schedule-line"></i></span>
+        <h4>Plazo de 30 días</h4>
+        <p>Disfruta de plazos de pago de 30 días, ¡sin intereses!</p>
+      </div>
+      <div class="deals__card">
+        <span><i class="ri-money-rupee-circle-line"></i></span>
+        <h4>5% de descuento en libros seleccionados</h4>
+        <p>
+          Gana un 5% de descuento en libros destacados o de categorías
+          especiales.
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="aboout">
+      <div class="about__header">
+        <div>
+          <h2 class="section__header">Sobre nosotros</h2>
+          <p>
+            Nuestra pasión por las historias excepcionales nos impulsa a
+            seleccionar los mejores libros para cada momento de tu vida.
+          </p>
+        </div>
+        <button class="about__btn">
+          Saber más
+          <div class="iconBtn">
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="about__content">
+        <div class="about__img"><img src="assets/about.jpg" alt="" /></div>
+        <div class="about__grid">
+          <div class="about__card">
+            <h3>1.</h3>
+            <h4>Quiénes somos</h4>
+            <p>
+              Te ofrecemos una prueba gratuita de 2 semanas para explorar
+              nuestra amplia colección de libros. Queremos que descubras todo lo
+              que tenemos para ofrecerte.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>2.</h3>
+            <h4>Qué hacemos</h4>
+            <p>
+              Te brindamos recomendaciones personalizadas y guías de lectura
+              para ayudarte a encontrar los libros que más te gustarán.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>3.</h3>
+            <h4>Cómo te ayudamos</h4>
+            <p>
+              Accede a reseñas, fragmentos de libros y clubes de lectura para
+              enriquecer tu experiencia literaria.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>4.</h3>
+            <h4>Crea tu propia historia de éxito</h4>
+            <p>
+              Con acceso a miles de títulos y recursos de aprendizaje,
+              cualquiera puede transformar su pasión por la lectura en algo
+              extraordinario.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container product__container" id="product">
+      <h2 class="section__header">Productos</h2>
+      <div class="product__grid" id="product-grid"></div>
+    </section>
+
+    <section class="section__container client__container">
+      <div class="client__content">
+        <h2 class="section__header">Lo que dicen nuestros clientes felices</h2>
+        <p class="section__description">
+          Testimonios que destacan nuestro compromiso con la calidad, el
+          servicio excepcional y la satisfacción del cliente.
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/user-1.jpg" alt="user" />
+                <div>
+                  <p>
+                    Book Store transformó mi biblioteca personal con su
+                    increíble selección de libros. ¡El 5% de descuento fue una
+                    sorpresa maravillosa!
+                  </p>
+                  <h4>Laura Martínez</h4>
+                  <h5>Escritora</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/user-2.jpg" alt="user" />
+                <div>
+                  <p>
+                    ¡Calidad y servicio excepcionales! Los libros llegaron en
+                    perfecto estado y las recomendaciones fueron muy acertadas.
+                  </p>
+                  <h4>Carlos Gómez</h4>
+                  <h5>Profesor</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/user-3.PNG" alt="user" />
+                <div>
+                  <p>
+                    Gracias a Book Store, he descubierto libros que nunca
+                    hubiera encontrado por mi cuenta. ¡Altamente recomendado!
+                  </p>
+                  <h4>Joan Rodríguez</h4>
+                  <h5>Lectora ávida</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo logo"><a href="#">Book Store</a></div>
+          <p>
+            Únete a nosotros para transformar tus momentos de lectura con libros
+            que combinan inspiración y conocimiento de manera perfecta.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Servicios</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Métodos de pago</a></li>
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Centro de ayuda</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col">
+            <div class="footer__col">
+              <h4>Pecursos</h4>
+              <ul class="footer__links">
+                <li><a href="#">Precios</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Soporte Técnico</a></li>
+                <li><a href="#">Piliticas de Privacidad</a></li>
+                <li><a href="#">Términos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Soporte</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Afiliados</a></li>
+            <li><a href="#">Políticas de cancelación</a></li>
+            <li><a href="#">Seguridad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 JosmaryPirela. Todos los derechos reservados.
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
